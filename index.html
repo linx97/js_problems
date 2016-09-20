@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	
+		//#1
+
+		var userWeight = prompt("What is your weight in pounds?");
+		var userHeightFeet = prompt("How many feet are you tall?");
+		userHeightFeet = parseFloat(userHeightFeet);
+
+		var userHeightInches = prompt("And how many inches?");
+		userHeightInches = parseFloat(userHeightInches);
+
+		var userHeight = userHeightFeet + (userHeightInches / 12);
+
+		var kilo = userWeight / 2.2;
+		var meter = userHeight * 0.3048;
+
+		alert("Your BMI is " + (kilo / (meter * meter)));
+
+
+
+		// #2
+
+		var temp = prompt("What is the temperature in celsius?");
+		var fahr = (temp / (5/9)) + 32 ;
+
+		alert("The temperature in Fahrenheit is " + fahr);
+
+
+		// #3
+
+		var testOne = prompt("What was your first test score?");
+		testOne = parseFloat(testOne);
+
+		var testTwo = prompt("What was your second test score?");
+		testTwo = parseFloat(testTwo);
+
+		var testThree = prompt("What was your third test score?");
+		testThree = parseFloat(testThree);
+
+		var testFour = prompt("What was your fourth test score?");
+		testFour = parseFloat(testFour);
+
+		var testFive = prompt("What was your fifth test score?");
+		testFive = parseFloat(testFive);
+
+		var average = (testOne + testTwo + testThree + testFour + testFive) / 5;
+
+		alert("Your average score is " + average);
+
+
+	</script>
+</body>
+</html>
